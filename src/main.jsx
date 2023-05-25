@@ -19,8 +19,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    loader: rootLoader,
-    action: rootAction,
+    loader: rootLoader, // нужен для загрузки данных при переходе
+    action: rootAction, // выполняет действие при отправке формы, перехватывая действие по умолчанию
     children: [
       {
         index: true,
